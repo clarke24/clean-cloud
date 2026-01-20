@@ -115,13 +115,17 @@ export function PackagesPreview() {
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </Link>
                 </Button>
+                <div className="mt-4 text-center text-xs text-muted-foreground space-y-1">
+                  <p>* 12-month contract with multi-site discounts available *</p>
+                  <p className="text-navy/60">Month-to-month available at full price (no discounts)</p>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
         {/* Multi-site discount note */}
-        <div ref={discountRef} className="mt-12 text-center">
+        <div ref={discountRef} className="mt-12 text-center space-y-3">
           <p className="text-muted-foreground">
             <span className="font-medium text-navy">Multiple locations?</span>{" "}
             Get 10% off for 2-5 sites, 15% off for 6+.{" "}
@@ -133,6 +137,13 @@ export function PackagesPreview() {
               <ArrowRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-1" />
             </Link>
           </p>
+          <div className="pt-4 border-t border-border/40 text-sm">
+            <p className="text-navy/70">
+              <span className="font-medium">Contract Terms:</span> Discounts apply to 12-month contracts. 
+              <br />
+              Prefer flexibility? Month-to-month billing available at full package price.
+            </p>
+          </div>
         </div>
       </div>
     </section>

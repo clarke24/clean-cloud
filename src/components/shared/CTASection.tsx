@@ -36,7 +36,7 @@ export function CTASection({
             asChild
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-navy text-lg px-8"
+            className="border-navy text-charcoal bg-green-500 hover:bg-green-400 hover:text-charcoal text-lg px-8"
           >
             <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
               <Phone className="mr-2 h-5 w-5" />

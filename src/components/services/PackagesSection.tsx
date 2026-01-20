@@ -5,18 +5,31 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight } from "lucide-react";
+import { RefObject } from "react";
 
-export function PackagesSection() {
+interface PackagesSectionProps {
+  headerRef?: RefObject<HTMLDivElement | null>;
+  cardsRef?: RefObject<HTMLDivElement | null>;
+  discountRef?: RefObject<HTMLDivElement | null>;
+}
+
+export function PackagesSection({
+  headerRef,
+  cardsRef,
+  discountRef,
+}: PackagesSectionProps) {
   return (
     <section id="packages" className="py-20 md:py-28 bg-white scroll-mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          eyebrow="Packages"
-          title="Choose your package"
-          description="Everything you need in one simple monthly fee"
-        />
+        <div ref={headerRef}>
+          <SectionHeader
+            eyebrow="Packages"
+            title="Choose your package"
+            description="Everything you need in one simple monthly fee"
+          />
+        </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div ref={cardsRef} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.packages.map((pkg) => (
             <Card
               key={pkg.id}
@@ -78,13 +91,19 @@ export function PackagesSection() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+                <div className="mt-4 text-center text-sm text-muted-foreground">
+                  * Minimum term of 12 months *
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
         {/* Multi-site discounts */}
-        <div className="mt-16 bg-gradient-to-r from-teal/10 to-success/10 rounded-2xl p-8 md:p-12">
+        <div
+          ref={discountRef}
+          className="mt-16 bg-gradient-to-r from-teal/10 to-success/10 rounded-2xl p-8 md:p-12"
+        >
           <div className="text-center max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-navy">
               Multi-site discounts

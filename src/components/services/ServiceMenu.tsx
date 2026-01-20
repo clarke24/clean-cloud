@@ -43,15 +43,10 @@ export function ServiceMenu() {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-off-white">
+    <section className="py-5 md:py-5 bg-off-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          eyebrow="What we offer"
-          title="Services menu"
-          description="Everything you need to keep your restaurant connected and running smoothly"
-        />
 
-        <div className="mt-16 space-y-4">
+        <div className="mt-4 space-y-4">
           {services.menu.map((service) => {
             const Icon = serviceIcons[service.id] || Wifi;
             const isExpanded = expandedService === service.id;

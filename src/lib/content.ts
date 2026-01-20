@@ -3,11 +3,12 @@
 export const siteConfig = {
   name: "Hospitality Techs",
   description: "Managed technical infrastructure for restaurants and cafés across the UK",
-  tagline: "Tech that just works. So you can do what you love.",
+  tagline: "Managed hospitality infrastructure for the North West of England.",
   phone: "0800 XXX XXXX",
   email: "hello@hospitalitytechs.co.uk",
   address: "United Kingdom",
-  serviceAreas: ["London", "South East", "Midlands", "North West", "Yorkshire", "Scotland"],
+  serviceAreas: ["Liverpool", "Manchester", "Preston", "Chester", "Warrington"],
+  missionStatement: "Hospitality-Techs exists to remove technology stress from hospitality businesses by owning, standardising, and reliably operating the systems they depend on every day — so they can focus on service, not infrastructure.",
 };
 
 export const navigation = [
@@ -432,19 +433,19 @@ export const faqs = [
 export const aboutValues = [
   {
     title: "Simplicity",
-    description: "One provider, one number to call, one bill. No complexity, no runaround.",
+    description: "One provider. One support number. One clear bill. No unnecessary complexity.",
   },
   {
     title: "Accountability",
-    description: "When something breaks, it's our problem. No finger-pointing between providers.",
+    description: "If something breaks, it's our responsibility. No passing blame between suppliers.",
   },
   {
     title: "Reliability",
-    description: "Business-grade kit, proper configuration, continuous monitoring. Built to last.",
+    description: "Business-grade equipment, proper configuration, and continuous monitoring — built to perform when it matters.",
   },
   {
     title: "Transparency",
-    description: "Real-time dashboards, honest pricing, no hidden fees. You always know where you stand.",
+    description: "Clear pricing, clear scope, and real visibility into your systems. No hidden surprises.",
   },
 ];
 
@@ -452,27 +453,27 @@ export const aboutProcess = [
   {
     step: 1,
     title: "Discovery",
-    description: "We visit your site, audit your current setup, and understand your specific needs.",
+    description: "We assess your current setup and understand how your business operates day-to-day.",
   },
   {
     step: 2,
     title: "Proposal",
-    description: "Clear, fixed-price quote with no surprises. We explain exactly what you're getting.",
+    description: "A clear, fixed-price plan outlining exactly what we'll manage — no surprises.",
   },
   {
     step: 3,
     title: "Installation",
-    description: "Professional installation during quiet hours. Minimal disruption to your service.",
+    description: "Professional installation during quiet hours, with minimal disruption to service.",
   },
   {
     step: 4,
     title: "Handover",
-    description: "We walk you through everything and make sure you're comfortable before we leave.",
+    description: "We walk you through the setup and make sure everything is working as expected.",
   },
   {
     step: 5,
     title: "Ongoing Support",
-    description: "24/7 monitoring, proactive maintenance, and a single number to call when you need us.",
+    description: "Continuous monitoring, proactive maintenance, and a single number to call when you need help.",
   },
 ];
 

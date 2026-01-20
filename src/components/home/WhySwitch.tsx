@@ -177,7 +177,9 @@ export function WhySwitch() {
                     {Array.from({ length: 30 }).map((_, i) => (
                       <div
                         key={i}
-                        ref={(el) => (barsRef.current[i] = el)}
+                        ref={(el) => {
+                          if (el) barsRef.current[i] = el;
+                        }}
                         className={`flex-1 rounded-t-sm origin-bottom transition-all duration-200 hover:opacity-100 ${
                           i === 14 
                             ? "bg-amber-400/60 hover:bg-amber-400" 
