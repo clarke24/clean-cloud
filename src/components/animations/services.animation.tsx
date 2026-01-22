@@ -151,7 +151,7 @@ export function useServicesAnimation(refs: ServicesAnimationRefs) {
       packagesTl.to(packagesHeaderRef.current, {
         opacity: 1,
         y: 0,
-        duration: 0.6,
+        duration: 0.3,
       });
 
       // Animate cards - center card (popular) first, then sides
@@ -162,10 +162,10 @@ export function useServicesAnimation(refs: ServicesAnimationRefs) {
           {
             opacity: 1,
             y: 0,
-            duration: 0.5,
+            duration: 0.2,
             ease: "power3.out",
           },
-          "-=0.2"
+          "-=0.1"
         );
 
         // Then animate side cards together
@@ -174,11 +174,11 @@ export function useServicesAnimation(refs: ServicesAnimationRefs) {
           {
             opacity: 1,
             y: 0,
-            duration: 0.5,
-            stagger: 0.1,
+            duration: 0.2,
+            stagger: 0.05,
             ease: "power3.out",
           },
-          "-=0.3"
+          "-=0.15"
         );
       } else if (cards) {
         // Fallback: stagger all cards
@@ -187,11 +187,11 @@ export function useServicesAnimation(refs: ServicesAnimationRefs) {
           {
             opacity: 1,
             y: 0,
-            duration: 0.5,
-            stagger: 0.15,
+            duration: 0.2,
+            stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.2"
+          "-=0.1"
         );
       }
 
@@ -201,9 +201,9 @@ export function useServicesAnimation(refs: ServicesAnimationRefs) {
         {
           opacity: 1,
           y: 0,
-          duration: 0.4,
+          duration: 0.2,
         },
-        "-=0.2"
+        "-=0.1"
       );
 
       // Included section animation

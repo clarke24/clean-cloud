@@ -198,17 +198,17 @@ export default function ServicesPageClient() {
       </section>
 
       {/* Why this approach */}
-      <section ref={whyRef} className="bg-gradient-to-br from-navy to-navy-light py-20 md:py-28">
+      <section ref={whyRef} className="bg-light-grey py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 rounded-2xl bg-teal/10 flex items-center justify-center mx-auto mb-6">
             <Shield className="h-8 w-8 text-teal" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal">
             Why we focus on infrastructure
           </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto mb-8">
             By specialising in the connectivity layer—not trying to fix every tech problem—we can deliver a service that&apos;s
-            <span className="text-white font-medium"> reliable, predictable, and fairly priced</span>.
+            <span className="text-charcoal font-medium"> reliable, predictable, and fairly priced</span>.
             You get experts who truly understand your network, not generalists spreading thin.
           </p>
           <Link

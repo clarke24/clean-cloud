@@ -68,56 +68,56 @@
 :root {
   --radius: 0.75rem;
   
-  /* Hospitality Techs Brand Colors */
-  --blue: #1E90FF;           /* Dodger Blue - primary accent */
-  --blue-light: #4DA6FF;     /* Lighter blue for hovers/highlights */
-  --blue-dark: #1873CC;      /* Darker blue for depth */
-  --charcoal: #36454F;       /* Charcoal - primary dark */
-  --charcoal-light: #4A5D6A; /* Lighter charcoal */
-  --off-white: #FAF9F6;      /* Off-white background */
-  --light-grey: #F0EFEC;     /* Slightly darker off-white */
+  /* Brand Colors */
+  --blue: #00B4D8;           /* Electric teal - primary accent */
+  --blue-light: #00D9FF;     /* Lighter teal for hovers/highlights */
+  --blue-dark: #0099B8;      /* Darker teal for depth */
+  --charcoal: #1B263B;       /* Deep navy blue - primary dark */
+  --charcoal-light: #2E2E2E; /* Charcoal grey - secondary dark */
+  --off-white: #F8F9FA;      /* Soft white background */
+  --light-grey: #F0F2F5;     /* Slightly darker off-white */
   --success: #22c55e;        /* Green for success states */
   --success-light: #86efac;
   
   /* Legacy color names for compatibility */
-  --navy: #36454F;
-  --navy-light: #4A5D6A;
-  --teal: #1E90FF;
-  --teal-light: #4DA6FF;
-  --mint: #87CEEB;
+  --navy: #1B263B;
+  --navy-light: #2E2E2E;
+  --teal: #00B4D8;
+  --teal-light: #00D9FF;
+  --mint: #00B4D8;
   
   /* Mapped to shadcn variables */
-  --background: #FAF9F6;
-  --foreground: #36454F;
+  --background: #F8F9FA;
+  --foreground: #1B263B;
   --card: #FFFFFF;
-  --card-foreground: #36454F;
+  --card-foreground: #1B263B;
   --popover: #FFFFFF;
-  --popover-foreground: #36454F;
-  --primary: #36454F;
-  --primary-foreground: #FAF9F6;
-  --secondary: #F0EFEC;
-  --secondary-foreground: #36454F;
-  --muted: #F0EFEC;
-  --muted-foreground: #6B7B86;
-  --accent: #1E90FF;
+  --popover-foreground: #1B263B;
+  --primary: #1B263B;
+  --primary-foreground: #F8F9FA;
+  --secondary: #00B4D8;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F0F2F5;
+  --muted-foreground: #2E2E2E;
+  --accent: #00B4D8;
   --accent-foreground: #FFFFFF;
   --destructive: #ef4444;
-  --border: #E5E4E1;
-  --input: #E5E4E1;
-  --ring: #1E90FF;
-  --chart-1: #1E90FF;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #00B4D8;
+  --chart-1: #00B4D8;
   --chart-2: #22c55e;
-  --chart-3: #36454F;
-  --chart-4: #4DA6FF;
-  --chart-5: #87CEEB;
+  --chart-3: #1B263B;
+  --chart-4: #00D9FF;
+  --chart-5: #2E2E2E;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #36454F;
-  --sidebar-primary: #36454F;
-  --sidebar-primary-foreground: #FAF9F6;
-  --sidebar-accent: #F0EFEC;
-  --sidebar-accent-foreground: #36454F;
-  --sidebar-border: #E5E4E1;
-  --sidebar-ring: #1E90FF;
+  --sidebar-foreground: #1B263B;
+  --sidebar-primary: #1B263B;
+  --sidebar-primary-foreground: #F8F9FA;
+  --sidebar-accent: #00B4D8;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #00B4D8;
 }
 
 @layer base {
@@ -137,32 +137,32 @@
 /* Custom utility classes */
 @layer utilities {
   .gradient-charcoal {
-    background: linear-gradient(135deg, #36454F 0%, #4A5D6A 100%);
+    background: linear-gradient(135deg, #1B263B 0%, #2E2E2E 100%);
   }
   
   /* Legacy gradient names */
   .gradient-navy {
-    background: linear-gradient(135deg, #36454F 0%, #4A5D6A 100%);
+    background: linear-gradient(135deg, #1B263B 0%, #2E2E2E 100%);
   }
   
   .gradient-blue {
-    background: linear-gradient(135deg, #1E90FF 0%, #4DA6FF 100%);
+    background: linear-gradient(135deg, #00B4D8 0%, #00D9FF 100%);
   }
   
   .gradient-teal {
-    background: linear-gradient(135deg, #1E90FF 0%, #4DA6FF 100%);
+    background: linear-gradient(135deg, #00B4D8 0%, #00D9FF 100%);
   }
   
   .gradient-hero {
-    background: linear-gradient(180deg, #FAF9F6 0%, #F0EFEC 50%, #FAF9F6 100%);
+    background: linear-gradient(180deg, #F8F9FA 0%, #F0F2F5 50%, #F8F9FA 100%);
   }
   
   .gradient-fun {
-    background: linear-gradient(135deg, #1E90FF 0%, #87CEEB 50%, #4DA6FF 100%);
+    background: linear-gradient(135deg, #00B4D8 0%, #1B263B 50%, #00D9FF 100%);
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #1E90FF 0%, #4DA6FF 100%);
+    background: linear-gradient(135deg, #00B4D8 0%, #00D9FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -175,7 +175,7 @@
   
   .hover-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px -8px rgba(30, 144, 255, 0.2);
+    box-shadow: 0 12px 24px -8px rgba(0, 180, 216, 0.2);
   }
   
   .smooth-bounce {

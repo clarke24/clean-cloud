@@ -13,12 +13,12 @@ export function CTASection({
   description = "Get a free consultation and see how Hospitality Techs can keep your restaurant running smoothly.",
 }: CTASectionProps) {
   return (
-    <section className="bg-gradient-to-br from-navy to-navy-light py-20 md:py-28">
+    <section className="bg-light-grey py-20 md:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal leading-tight">
           {title}
         </h2>
-        <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto">
           {description}
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -34,9 +34,8 @@ export function CTASection({
           </Button>
           <Button
             asChild
-            variant="outline"
             size="lg"
-            className="border-navy text-charcoal bg-green-500 hover:bg-green-400 hover:text-charcoal text-lg px-8"
+            className="bg-green-500 hover:bg-green-600 text-white text-lg px-8"
           >
             <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
               <Phone className="mr-2 h-5 w-5" />

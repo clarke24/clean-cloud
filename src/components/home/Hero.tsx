@@ -77,12 +77,14 @@ export function Hero() {
           <div className="max-w-4xl">
             {/* Eyebrow */}
             <div
-              ref={eyebrowRef}              >
+              ref={eyebrowRef}
+              className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-success/10 border border-success/20 mb-4"
+            >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-success"></span>
               </span>
-              Managed tech for hospitality
+              <span className="text-sm font-medium text-charcoal">Managed Hospitality Infrastructure</span>
             </div>
 
             {/* Main headline - The Hook */}

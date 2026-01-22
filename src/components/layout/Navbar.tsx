@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { Menu, X, Phone, Utensils } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navigation, siteConfig } from "@/lib/content";
 import { usePathname } from "next/navigation";
@@ -53,18 +53,12 @@ export function Navbar() {
               onMouseEnter={(e) => animateLogoHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateLogoHover(e.currentTarget, false)}
             >
-              <div className="flex items-center relative">
-                {/* Logo icon/mark */}
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue to-blue-light flex items-center justify-center mr-2.5 shadow-lg shadow-blue/25 group-hover:shadow-xl group-hover:shadow-blue/35 transition-all duration-300 group-hover:scale-105 group-hover:rotate-3">
-                  <Utensils className="w-4.5 h-4.5 text-white" />
-                </div>
-                <span className="text-xl font-bold text-charcoal tracking-tight">
-                  Hospitality
-                </span>
-                <span className="text-xl font-bold text-blue tracking-tight ml-1">
-                  Techs
-                </span>
-              </div>
+            <span className="text-2xl font-bold text-charcoal tracking-tight">
+              Hospitality
+            </span>
+              <span className="text-2xl font-bold text-blue tracking-tight">
+                Techs
+              </span>
             </Link>
 
             {/* Desktop Navigation */}

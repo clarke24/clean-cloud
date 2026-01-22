@@ -5,7 +5,47 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight } from "lucide-react";
-import { RefObject } from "react";
+import { RefObject, useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
+// Price counter component
+function PriceCounter({ value }: { value: number }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const scrollContainer = document.querySelector(".snap-y");
+    
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        scroller: scrollContainer || undefined,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    }).to(
+      { value: 0 },
+      {
+        value: value,
+        duration: 1.2,
+        ease: "power2.out",
+        onUpdate: function () {
+          if (containerRef.current) {
+            containerRef.current.textContent = Math.floor(this.targets()[0].value).toString();
+          }
+        },
+      }
+    );
+  }, [value]);
+
+  return <span ref={containerRef}>0</span>;
+}
 
 interface PackagesSectionProps {
   headerRef?: RefObject<HTMLDivElement | null>;
@@ -57,7 +97,7 @@ export function PackagesSection({
                 <div className="text-center py-6 border-y border-border">
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-5xl font-bold text-navy">
-                      £{pkg.monthlyPrice}
+                      £<PriceCounter value={pkg.monthlyPrice} />
                     </span>
                     <span className="text-muted-foreground text-lg">/mo</span>
                   </div>
