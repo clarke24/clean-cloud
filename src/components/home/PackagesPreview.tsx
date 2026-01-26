@@ -88,17 +88,12 @@ export function PackagesPreview() {
 
                 {/* Features */}
                 <ul className="py-6 space-y-3">
-                  {pkg.features.slice(0, 4).map((feature) => (
+                  {pkg.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3 group/feature">
                       <Check className="h-5 w-5 text-success flex-shrink-0 mt-0.5 transition-transform duration-200 group-hover/feature:scale-110" />
                       <span className="text-sm text-navy/80">{feature}</span>
                     </li>
                   ))}
-                  {pkg.features.length > 4 && (
-                    <li className="text-sm text-teal font-medium">
-                      +{pkg.features.length - 4} more features
-                    </li>
-                  )}
                 </ul>
 
                 {/* CTA */}

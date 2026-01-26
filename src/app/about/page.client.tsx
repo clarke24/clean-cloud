@@ -92,9 +92,16 @@ export default function AboutPageClient() {
                 <h3 className="text-lg font-bold text-charcoal mb-3">
                   Founder's Note
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  "Hospitality Techs exists to provide infrastructure that actually works — delivered by people who understand how hospitality operates in the real world."
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                  "Hospitality Techs was built to protect non-technical restaurateurs."
                 </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                  "We bring the power of great tech — without the jargon, stress, or surprise costs."
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  "Our partner-first approach means we get to know your business and support you for the long haul. Simple. Reliable. Built for hospitality."
+                </p>
+
                 <p className="text-sm font-semibold text-charcoal">
                   [Founder Name]
                 </p>

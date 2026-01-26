@@ -8,7 +8,7 @@ export const siteConfig = {
   email: "hello@hospitalitytechs.co.uk",
   address: "United Kingdom",
   serviceAreas: ["Liverpool", "Manchester", "Preston", "Chester", "Warrington"],
-  missionStatement: "Hospitality-Techs exists to remove technology stress from hospitality businesses by owning, standardising, and reliably operating the systems they depend on every day — so they can focus on service, not infrastructure.",
+  missionStatement: "Hospitality Techs exists to provide infrastructure that actually works — delivered by people who understand how hospitality operates in the real world.",
 };
 
 export const navigation = [
@@ -329,6 +329,7 @@ export const services = {
       popular: false,
       features: [
         "Core Network & Wi-Fi Management",
+        "4G/5G Failover (critical backup)",
         "Remote monitoring",
         "Email support",
         "Next business day response",
@@ -337,16 +338,16 @@ export const services = {
     {
       id: "uptime",
       name: "Uptime",
-      description: "Maximum reliability with automatic failover",
+      description: "Maximum reliability with advanced failover and support",
       monthlyPrice: 299,
       installPrice: 549,
       popular: true,
       features: [
         "Everything in Core",
-        "4G/5G Failover included",
-        "Business phone line",
         "Priority support (4hr response)",
+        "Business phone line",
         "Monthly uptime reports",
+        "Advanced failover monitoring",
       ],
     },
     {
@@ -375,6 +376,7 @@ export const services = {
 // What's included across all services
 export const allServicesInclude = [
   "Hardware we supply is maintained and replaced if it fails",
+  "4G/5G cellular backup (always included)",
   "Systems are kept up to date and secure",
   "Monitoring runs continuously",
   "You have one point of contact for support",
@@ -410,11 +412,11 @@ export const faqs = [
   },
   {
     question: "Do we need new equipment?",
-    answer: "Usually yes. Consumer-grade routers and kit from your ISP aren't built for busy hospitality environments. We install business-grade equipment designed for reliability. All hardware is included—we own it, maintain it, and replace it if it fails.",
+    answer: "Yes. Most routers and kit from your ISP aren't designed for a busy restaurant. We install reliable, professional-grade equipment. The good news—we own all of it. If something breaks or needs replacing, we fix it or swap it out. It's all included in your monthly fee, no surprises.",
   },
   {
     question: "What happens if our broadband goes down?",
-    answer: "With our Uptime or Total Cover packages, your 4G failover kicks in automatically within seconds. Your card machines and booking systems keep working. Guest Wi-Fi is automatically disabled to preserve bandwidth for what matters most.",
+    answer: "Failover is included in every package—we view it as critical. Your 4G/5G backup automatically kicks in within seconds, so your payments and bookings keep working without interruption. Guest Wi-Fi is automatically reduced to save bandwidth for what matters most.",
   },
   {
     question: "Can you help with multiple locations?",
@@ -433,19 +435,19 @@ export const faqs = [
 export const aboutValues = [
   {
     title: "Simplicity",
-    description: "One provider. One support number. One clear bill. No unnecessary complexity.",
+    description: "One provider. One support number. One clear bill. No jargon, no finger-pointing.",
   },
   {
     title: "Accountability",
-    description: "If something breaks, it's our responsibility. No passing blame between suppliers.",
+    description: "We own the entire infrastructure layer. If something breaks, we fix it. That's it.",
   },
   {
     title: "Reliability",
-    description: "Business-grade equipment, proper configuration, and continuous monitoring — built to perform when it matters.",
+    description: "You need technology that works, not technology you understand. We handle the complexity so you don't have to.",
   },
   {
-    title: "Transparency",
-    description: "Clear pricing, clear scope, and real visibility into your systems. No hidden surprises.",
+    title: "Built for Hospitality",
+    description: "We understand restaurants and cafés. We've designed everything around how you actually operate.",
   },
 ];
 

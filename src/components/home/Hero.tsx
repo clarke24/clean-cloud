@@ -90,13 +90,13 @@ export function Hero() {
             {/* Main headline - The Hook */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-charcoal leading-[1.1] tracking-tight">
               <span ref={line1Ref} className="block">
-                Your ISP blames the router.
+                When the internet drops  
               </span>
               <span ref={line2Ref} className="block">
-                Your IT guy blames the ISP.
+                and service grinds to a halt…
               </span>
               <span ref={line3Ref} className="relative block w-fit">
-                <span className="text-gradient">We just fix it.</span>
+                <span className="text-gradient">Who do you call?</span>
                 {/* Animated underline */}
                 <span
                   ref={underlineRef}
@@ -115,10 +115,12 @@ export function Hero() {
               ref={subheadlineRef}
               className="mt-6 text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed"
             >
-              Internet, phones, Wi-Fi—managed by one team who actually owns the
-              problem.{" "}
+              The internet drops. Payments freeze. Revenue stops.
               <span className="text-charcoal font-medium">
-                When broadband fails, backup kicks in. You keep trading.
+                
+              </span>
+              <span className="text-charcoal font-medium">
+                Every second costs you money.
               </span>
             </p>
 
@@ -127,9 +129,9 @@ export function Hero() {
               ref={promiseRef}
               className="mt-4 text-base md:text-lg text-charcoal/80 font-medium"
             >
-              One number. One team.{" "}
+              We own it end-to-end. No finger-pointing, no delays.{" "}
               <span className="text-blue" style={{ fontWeight: 900 }}>
-                Sorted.
+                You stay online.
               </span>
             </p>
 

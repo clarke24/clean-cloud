@@ -53,9 +53,9 @@ export function Navbar() {
               onMouseEnter={(e) => animateLogoHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateLogoHover(e.currentTarget, false)}
             >
-            <span className="text-2xl font-bold text-charcoal tracking-tight">
-              Hospitality
-            </span>
+              <span className="text-2xl font-bold text-charcoal tracking-tight">
+                Hospitality
+              </span>
               <span className="text-2xl font-bold text-blue tracking-tight">
                 Techs
               </span>

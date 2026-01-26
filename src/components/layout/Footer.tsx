@@ -12,8 +12,8 @@ export function Footer() {
           {/* Brand - Compact */}
           <div className="space-y-2 lg:col-span-1">
             <div className="flex items-baseline gap-0.5">
-              <span className="text-lg font-bold text-white">Hospitality</span>
-              <span className="text-lg font-bold text-blue">Techs</span>
+              <span className="text-base font-bold text-white">Hospitality</span>
+              <span className="text-base font-bold text-blue">Techs</span>
             </div>
             <p className="text-white/50 text-xs leading-tight max-w-xs">
               {siteConfig.missionStatement}
